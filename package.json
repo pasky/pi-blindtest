@@ -1,0 +1,31 @@
+{
+  "name": "pi-blindtest",
+  "version": "1.0.0",
+  "description": "Pi extension for blind model testing: hide model in UI and aggregate ratings across sessions.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "blindtest",
+    "rating"
+  ],
+  "files": [
+    "extensions/",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
