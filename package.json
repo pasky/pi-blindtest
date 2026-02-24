@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Pi extension for blind model testing: hide model in UI and aggregate ratings across sessions.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pasky/pi-blindtest.git"
+  },
+  "homepage": "https://github.com/pasky/pi-blindtest#readme",
   "type": "module",
   "keywords": [
     "pi-package",
