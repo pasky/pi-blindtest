@@ -767,14 +767,11 @@ export default function blindtestExtension(pi: ExtensionAPI) {
 		}
 	};
 
-	pi.on("session_start", async (_event, ctx) => {
-		const isFreshSession = ctx.sessionManager.getEntries().length === 0;
+	pi.on("session_start", async (event, ctx) => {
+		const isFreshSession = event.reason === "startup"
+			? ctx.sessionManager.getEntries().length === 0
+			: event.reason === "new";
 		await initializeBlindSession(ctx, isFreshSession);
-	});
-
-	pi.on("session_switch", async (event, ctx) => {
-		const activateBlindModel = event.reason === "new";
-		await initializeBlindSession(ctx, activateBlindModel);
 	});
 
 	pi.on("before_agent_start", async (_event, ctx) => {
