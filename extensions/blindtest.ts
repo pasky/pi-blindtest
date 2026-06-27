@@ -22,8 +22,8 @@ import {
 	type Model,
 	type SimpleStreamOptions,
 	type TextContent,
-} from "@mariozechner/pi-ai";
-import type { ExtensionAPI, ExtensionContext } from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-ai";
+import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-agent";
 
 const BLIND_PROVIDER = "blindtest";
 const BLIND_MODEL_ID = "blind";
