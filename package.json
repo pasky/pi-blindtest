@@ -1,6 +1,6 @@
 {
   "name": "pi-blindtest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pi extension for blind model testing: hide model in UI and aggregate ratings across sessions.",
   "license": "MIT",
   "repository": {
